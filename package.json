@@ -1,6 +1,6 @@
 {
   "name": "vue-kawayi-modal",
-  "version": "0.1.2",
+  "version": "0.2.0",
   "description": "基于Vue的可爱对话框",
   "main": "lib/vue-kawayi-modal.umd.min.js",
   "keyword": "vue-kawayi-modal vue-modal modal",

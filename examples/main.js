@@ -1,8 +1,7 @@
 import Vue from 'vue'
 import App from './App.vue'
 
-import KawayiModal from 'vue-kawayi-modal'
-import 'vue-kawayi-modal/lib/vue-kawayi-modal.css'
+import KawayiModal from '../packages/index'
 Vue.use(KawayiModal)
 
 Vue.config.productionTip = false

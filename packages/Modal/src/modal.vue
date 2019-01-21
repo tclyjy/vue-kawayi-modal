@@ -1,36 +1,50 @@
 <template>
   <div>
-    <div class="bg" :data-show="visible" v-if="showMask"></div>
-    <div class="container" :data-show="visible">
-      <div class="inner" :data-show="visible">
-        <div class="close" @click="handleMask" v-if="showMask"></div>
-        <div class="line-back">
+    <Bg :data-show="visible" v-if="showMask"></Bg>
+    <Container :data-show="visible">
+      <Inner :data-show="visible">
+        <Close @click="handleMask" v-if="showMask"></Close>
+        <LineBack>
           <div></div>
           <div></div>
-        </div>
-        <div class="panel">
-          <div class="header">
-            <div class="title">{{title}}</div>
-          </div>
-          <div class="body">
+        </LineBack>
+        <Panel>
+          <Header>
+            <Title>{{title}}</Title>
+          </Header>
+          <Body>
             <slot></slot>
-          </div>
-          <div class="footer">
-            <div class="close-btn" @click="close">{{cancelText}}</div>
-          </div>
-        </div>
-        <div class="line-front">
+          </Body>
+          <Footer>
+            <CLoseBtn @click="close">{{cancelText}}</CLoseBtn>
+          </Footer>
+        </Panel>
+        <LineFront>
           <div></div>
           <div></div>
-        </div>
-      </div>
-    </div>
+        </LineFront>
+      </Inner>
+    </Container>
   </div>
 </template>
 <script>
-import './style/index.less';
+import { Bg, Container, Inner, Close, LineBack, LineFront, Panel, Header, Title, Body, Footer, CLoseBtn } from './styles.js'
 export default {
   name: 'KawayiModal',
+  components: {
+    Bg,
+    Container,
+    Inner,
+    Close,
+    LineBack,
+    LineFront,
+    Panel,
+    Header,
+    Title,
+    Body,
+    Footer,
+    CLoseBtn
+  },
   props: {
     value: {
       type: Boolean,
