@@ -1,9 +1,9 @@
 import Vue from 'vue'
 import App from './App.vue'
 
-import Modal from '../packages/index'
+import KawayiModal from '../packages/index'
 
-Vue.use(Modal)
+Vue.use(KawayiModal)
 
 Vue.config.productionTip = false
 

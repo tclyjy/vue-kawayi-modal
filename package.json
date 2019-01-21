@@ -4,7 +4,6 @@
   "description": "基于Vue的可爱对话框",
   "main": "lib/vue-kawayi-modal.umd.min.js",
   "keyword": "vue-kawayi-modal vue-modal modal",
-  "private": true,
   "scripts": {
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build",

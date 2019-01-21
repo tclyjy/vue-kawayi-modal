@@ -2,7 +2,7 @@
   <div id="app">
     <div class="title" @click="show=true">Kawayi Modal</div>
     <div class="btn" @click="show=true">Show Modal</div>
-    <Modal v-model="show" title="Hello Kawayi Modal" cancel-text="关闭">
+    <KawayiModal v-model="show" title="Hello Kawayi Modal" cancel-text="关闭">
       <div class="table">
         <table>
           <tr>
@@ -57,7 +57,7 @@
           </tr>
         </table>
       </div>
-    </Modal>
+    </KawayiModal>
   </div>
 </template>
 
