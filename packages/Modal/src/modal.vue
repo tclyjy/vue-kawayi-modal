@@ -28,6 +28,7 @@
   </div>
 </template>
 <script>
+import './style/index.less';
 export default {
   name: 'KawayiModal',
   props: {
@@ -76,6 +77,3 @@ export default {
   }
 }
 </script>
-<style lang="less">
-@import "./style/index.less";
-</style>

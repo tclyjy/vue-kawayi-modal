@@ -10,7 +10,9 @@ npm install vue-kawayi-modal --save
 ## Usage
 ```
 import Vue from 'vue'
+
 import KawayiModal from 'vue-kawayi-modal'
+import 'vue-kawayi-modal/lib/vue-kawayi-modal.css'
 
 Vue.use(KawayiModal)
 ```
